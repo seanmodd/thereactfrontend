@@ -3,4 +3,6 @@ const path = require('path');
 const app = new express();
 app.use(express.static(path.join(__dirname, 'dist')));
 app.get('*', (req, res) => res.sendFile(__dirname + '/dist/index.html'));
-app.listen('4000');
+app.listen('https://thereactbackend.herokuapp.com');
+// app.listen('https://thereactfrontend.netlify.app/');
+// app.listen('4000');
